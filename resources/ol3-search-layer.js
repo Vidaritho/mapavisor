@@ -87,7 +87,8 @@ var SearchLayer = (function (Control) {
   select = new ol.interaction.Select({
     id: options.selectId || 'defaultSearchLayer',
     layers: [options.layer],
-    condition: ol.events.condition.never
+    condition: ol.events.condition.never,
+    style: null
   });
 
   var map = options.map;
